@@ -1,0 +1,109 @@
+@keyframes themecolor-movein {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes themecolor-move {
+    0% {
+        left: 0;
+    }
+    1% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    51% {
+        right: 0;
+    }
+    100% {
+        right: 0;
+        width: 0;
+    }
+}
+
+body {
+    margin: 0;
+    width: 500px;
+    position: relative;
+}
+
+h1 {
+    margin-block-start: 0;
+    background: linear-gradient(90deg, #63E8FF, #6376FF, #DB63FF);
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    animation: .5s ease-in-out 0s normal running themecolor-movein;
+    white-space: nowrap;
+}
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h1 span {
+    font-size: 1rem;
+}
+
+.output {
+    font-size: 1rem;
+    background: linear-gradient(90deg, #63E8FF, #6376FF, #DB63FF);
+    margin-bottom: 3px;
+}
+
+.errorput {
+    background: linear-gradient(90deg, #ff9100, #ff0b0b, #af4233);
+}
+
+.loading {
+    position: absolute;
+    border-bottom: 5px solid #8c96ff;
+    background: linear-gradient(90deg, #DB63FF, #6376FF, #63E8FF);
+    animation: 1s ease-in-out 0s infinite running themecolor-move;
+    transition: .5s;
+    height: 5px;
+}
+
+.complete {
+    animation: none;
+    border-bottom: 0 solid #8c96ff;
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 80%;
+    border: none;
+    border-bottom: 5px solid #6376FF;
+    transition: .5s;
+}
+
+input[type="text"]:hover {
+    border-bottom: 5px solid #af4233;
+}
+
+input[type="text"]:focus {
+    border-bottom: 5px dashed #DB63FF;
+}
+
+input[type="button"] {
+    width: 14%;
+    margin-left: 1%;
+    border: 5px solid #63E8FF;
+    background-color: transparent;
+    transition: .5s;
+}
+
+input[type="button"]:hover {
+    border: 5px dashed #8c96ff;
+}
+
+header {
+    background-color: #d8d8d8;
+}

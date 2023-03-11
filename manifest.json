@@ -1,0 +1,21 @@
+{
+    "name": "Aqua on chrome - β",
+    "description": "Unofficial AquaScript Platform.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": ["scripting"],
+    "icons": {
+        "128": "icon-128.png",
+        "48": "icon-48.png",
+        "16": "icon-16.png"
+    },
+    "action": {
+        "default_icon": {
+            "128": "icon-128.png",
+            "48": "icon-48.png",
+            "16": "icon-16.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Run aqua"
+    }
+}
